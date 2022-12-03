@@ -1,0 +1,5 @@
+actions:
+  - action: command.run
+    command: powershell
+    args:
+      - 'write-host two'

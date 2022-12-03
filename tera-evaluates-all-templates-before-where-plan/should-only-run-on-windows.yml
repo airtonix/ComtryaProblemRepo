@@ -1,0 +1,8 @@
+---
+where: os.name == "windows"
+
+actions:
+
+  - action: file.copy
+    from: winget.json
+    to: '{{ get_env(name="LOCALAPPDATA", "NOLOCALAPPDATA") }}'

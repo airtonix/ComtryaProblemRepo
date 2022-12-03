@@ -1,0 +1,8 @@
+depends:
+  - two
+
+actions:
+  - action: command.run
+    command: powershell
+    args:
+      - 'write-host three'
