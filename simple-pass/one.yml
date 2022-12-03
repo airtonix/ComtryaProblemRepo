@@ -1,0 +1,16 @@
+actions:
+  - action: command.run
+    command: comtrya
+    variants:
+      - where: os.name == "linux"
+        command: "echo"
+        args:
+          - "linux"
+      - where: os.name == "macos"
+        command: "echo"
+        args:
+          - "macos"
+      - where: os.name == "windows"
+        command: "powershell"
+        args:
+          - "write-host windows"

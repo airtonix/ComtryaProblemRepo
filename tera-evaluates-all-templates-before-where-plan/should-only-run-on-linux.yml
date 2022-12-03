@@ -5,11 +5,4 @@ actions:
 
 actions:
   - action: command.run
-    command: sh
-    args:
-      - -c 'echo {{ user.home_dir }}'
-
-  - action: command.run
-    command: sh
-    args:
-      - -c 'echo {{ get_env("EDITOR", "NOEDITORSET") }}'
+    command: echo
